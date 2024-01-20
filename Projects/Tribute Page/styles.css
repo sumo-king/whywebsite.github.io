@@ -1,0 +1,46 @@
+body{
+    font-family: tahoma;
+    color: #333333;
+  }
+  
+  main{
+    background-color: rgb(238,238,238);
+    border-radius: 5px;
+  }
+  
+  h1, p{
+    text-align: center;
+  }
+  
+  h4{
+    text-align: center;
+  }
+  
+  div{
+    text-align: center; 
+    background-color: white;
+    padding-top: 20px;
+    width: 98%;
+    margin: auto auto;
+  }
+  
+  span{
+    font-weight: bold;
+  }
+  
+  ul li{
+    width: 50%;
+    text-align: left;
+    padding: 15px 5px;
+    margin: auto auto;
+  }
+  
+  div p{
+    font-size: small;
+  }
+  
+  img{
+    width: 70%;
+    object-fit: cover;
+    
+  }

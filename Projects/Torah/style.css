@@ -1,0 +1,284 @@
+body{
+    padding-top: 150px;
+    font-family:tahoma;
+    color: rgb(40, 40, 40);
+}
+h1{
+    font-weight: 600;
+    color:rgb(224, 224, 224);
+}
+
+header{
+    position: fixed;
+    top: 0.5px;
+    width: 98.5%;
+}
+
+#videos{
+    display: grid;
+    grid-template-columns: repeat(3,100%);
+    overflow: hidden;
+    overflow-x: scroll;
+    height: 250px;
+    scroll-behavior: smooth;
+}
+
+#videos iframe{
+    margin: auto;
+}
+
+#daily-chapter{
+    color:#152438;
+    text-align: center;
+}
+
+.top-page{
+    display: block;   
+}
+
+.video{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.introduction p{
+    text-align: center;
+    width: 30%;
+}
+p .italics{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.top-page ul{
+    text-align: center;
+    padding-left: 60px;
+}
+.top-page a{
+    padding: 1px 6px;
+}
+.top-page li{
+    list-style: none;
+    display: inline;
+    padding: 20px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.back{
+    
+    /*background-image: url("images/torahimage.jpeg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    background-color: #263950;/*rgba(17, 17, 71, 0.917);*/
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #152438;
+}
+div{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.content h3{
+    text-align: center;
+    padding-top: 30px;
+}
+.content h2{
+    
+    background-color: #152438;
+    color: rgb(224, 224, 224);
+    border-radius: 30px;
+    width: 30%;
+    padding: 10px;
+    margin:auto;
+}
+.content p{
+    width: 50%;
+    text-align: left;
+    padding: 0 0 20px 90px;
+}
+
+
+
+.temple{
+    background-image: url("images/temple.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display:inline-block;
+    padding: 0px;
+    text-decoration: none;   
+}
+
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+hr{
+    border-color: navy;
+}
+
+.aPriest{
+    color: lightblue;
+}
+.aPriest:active{
+    color: grey;
+}
+.aPriest:visited{
+    color: black;
+}
+
+.aPriest:hover{
+    color: whitesmoke;
+}
+
+.aIndex{
+    color: white;
+    
+}
+
+.aIndex:active{
+    color: black;
+}
+.aIndex:visited{
+    color: whitesmoke;
+}
+
+.aIndex:hover{
+    color: #263950;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 5px;
+}
+
+.aIndex2:hover {
+    color: #263950;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 5px;
+}
+
+.aIndex2{
+    color: #263950;
+    background-color: rgba(245, 245, 245, 0.63);
+    border-radius: 5px;
+}
+
+.aIndex1{
+    color: #263950;
+    background-color: rgba(245, 245, 245, 0.63);
+    border-radius: 5px;
+}
+
+.aIndex1:hover{
+    color: #263950;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 5px;
+}
+
+.aIndex3{
+    color: #263950;
+    background-color: rgba(245, 245, 245, 0.63);
+    border-radius: 5px;
+}
+
+.aIndex3:hover{
+    color: #263950;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    width: 5px;
+}
+
+
+
+.youtube-links li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+}
+
+.youtube-links a{
+    color:rgb(40, 40, 40);
+}
+
+/* Blogs section*/
+.blog a{ 
+    background-color: #152438;
+    padding: 20px 20px;
+    border-radius: 20px;
+}
+.blog a:hover{
+    background-color:rgb(224, 224, 224);
+    color: #152438;
+    cursor: pointer;
+   
+}
+.blog{
+    color: rgb(224, 224, 224);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.blog a{
+    color: rgb(224, 224, 224);
+}
+
+/*Ancient Texts Section*/
+.texts{
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+ .texts a:hover{
+    background-color: rgb(224, 224, 224) ;
+    color: #152438;
+}
+
+.texts a{
+    color: rgb(224, 224, 224);
+}
+
+.texts li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 14px 90px;
+    
+}
+
+.texts a{
+    color: rgb(224, 224, 224);
+    text-align: center;
+    background-color: #152438;
+    width: 90%;
+    font-size: larger;
+    font-weight: 500;
+    border-radius: 30px;
+   padding: 15px;
+}
+
+.texts h3{
+   text-align:center;
+}
