@@ -1,7 +1,9 @@
 *{
     background-color: #E8E8EB;
     box-sizing: border-box;
-    color: #313638
+    color: #313638;
+    font-family: 'Ubuntu', sans-serif;
+    scroll-behavior: smooth;
 }
 @font-face {
     font-family: 'Ubuntu';
@@ -9,16 +11,21 @@
     font-weight: normal;
     font-size: normal;
 }
+@font-face {
+    font-family: 'Ubuntu-Bold';
+    src: url('Fonts/Ubuntu-B.ttf')format('truetype');
+    font-weight: bold;
+    font-size: normal;
+}
 .heading{
     text-decoration: none;
-    font-family: 'Ubuntu';
     background-color: transparent;
 }
 .logo h1{
     background-color: transparent;
 }
 .header-list{
-    font-family: 'Ubuntu';
+   
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -38,7 +45,10 @@
     text-decoration: underline;
 }
 .header-menu{
-    
+    position:absolute;
+    width: 100vw;
+    left: 0;
+    border-radius: 1rem;
     display: flex;
     flex-direction: row;
     background-color: #E0DFD5;
@@ -57,7 +67,7 @@
 }
 
 .intro-section{
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -65,13 +75,28 @@
     justify-content: center;
 }
 
+.fa-angle-down{
+    position: sticky;
+    /* margin-top: 30vh; */
+}
+.fa-angle-up{
+    position: sticky;
+    left: 90vw;
+    top: 90vh;
+    background-color: #E0DFD5;
+    padding: 20px;
+    border-radius: 50px;
+}
+
+.fa-angle-up:hover{
+
+}
 .intro-section h2{
     font-family: 'Ubuntu', sans-serif;
     font-size: 25px;
     color: black;
 }
 .intro-section h1{
-    font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
     color: rgb(46, 46, 46);
 }
@@ -85,12 +110,32 @@
     border-radius: 20px;
 }
 
-.project-section{
+.about-section{ 
+    padding: 20px;
     height: 100vh;
     width: 100vw;
     text-align: center;
 }
 
+.about-section .inner-about{
+    display: flex;
+    flex-direction: row;
+}
+
+.about-section .about-image, .about-section .about-text{
+    width: 50%;
+    height: 80vh;
+}
+.about-section .about-image img{
+    /* TODO: fix image aspect ratio */
+}
+
+.about-section .about-text h1{
+    font-family: 'Ubuntu-Bold', 'san-serif';
+    font-size: 80px;
+    z-index: -1;
+    color:#313638c6;
+}
 @media screen and (max-width: 767px){
     .header-item{
         display: none;
@@ -110,7 +155,4 @@
         height: 15vh;
         align-content: center;
     }
-
-
-
 }
