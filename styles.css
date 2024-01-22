@@ -5,6 +5,7 @@
     font-family: 'Ubuntu', sans-serif;
     scroll-behavior: smooth;
 }
+
 @font-face {
     font-family: 'Ubuntu';
     src: url('Fonts/Ubuntu-L.ttf')format('truetype');
@@ -35,14 +36,18 @@
     list-style: none;
     background-color: transparent;
     font-size: 20px;
+    transition: transform 0.3s ease-in;
+}
+.header-list li:hover{
+    transform: translateY(-10px);
 }
 .header-list li a{
     background-color: transparent;
     text-decoration: none;
-    transition: text-decoration .5s ease-in-out;
+    transition: color .2s ease-in-out;
 }
 .header-list li a:hover{
-    text-decoration: underline;
+    color: #072AC8;
 }
 .header-menu{
     position:absolute;
@@ -78,6 +83,13 @@
 .fa-angle-down{
     position: sticky;
     /* margin-top: 30vh; */
+    transition: transform 0.3s ease, font-size 0.3s ease;
+}
+
+.fa-angle-down:hover{
+    transform: translateY(-10px);
+    font-size: 30px;
+    color: #072AC8;
 }
 .fa-angle-up{
     position: sticky;
@@ -86,10 +98,13 @@
     background-color: #E0DFD5;
     padding: 20px;
     border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 .fa-angle-up:hover{
-
+    background-color: #072AC8;
+    color: #E0DFD5;
+    transform: translateY(-10px);
 }
 .intro-section h2{
     font-family: 'Ubuntu', sans-serif;
@@ -123,11 +138,12 @@
 }
 
 .about-section .about-image, .about-section .about-text{
+    padding-top: 100px;
     width: 50%;
     height: 80vh;
 }
 .about-section .about-image img{
-    /* TODO: fix image aspect ratio */
+    object-fit: cover;
 }
 
 .about-section .about-text h1{
@@ -135,6 +151,24 @@
     font-size: 80px;
     z-index: -1;
     color:#313638c6;
+}
+
+.portfolio-section{
+    text-align: center;
+    height: 100vh;
+
+}
+.portfolio-section .portfolio{
+    display: flex;
+    padding: 20px;
+}
+
+.portfolio-section .portfolio-image, .portfolio-section .portfolio-details{
+    margin: 5px;
+    height: 80vh;
+    width: 50%;
+    border: solid 1px rgb(46, 46, 46);
+    border-radius: 1rem;
 }
 @media screen and (max-width: 767px){
     .header-item{
