@@ -7,7 +7,7 @@ $(document).ready(function() {
 
             project += `<div class="portfolio" id="portfolio">`+
                 `<div class="portfolio-image">` +
-                    `<img src=${value.image}>`+
+                    `<img width=430px height=350px style="object-fit: cover" src=${value.image}>`+
                 `</div>`+
                 `<div class="portfolio-details">`+
                     `<h3>${value.name}</h3>`+
