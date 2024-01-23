@@ -35,10 +35,10 @@
     list-style: none;
     background-color: transparent;
     font-size: 20px;
-    transition: transform 0.3s ease-in;
+    transition: translate 0.3s ease;
 }
 .header-list li:hover{
-    transform: translateY(-10px);
+    translate: -5px -5px;
 }
 .header-list li a{
     background-color: transparent;
@@ -52,6 +52,7 @@
     position:fixed;
     height: 10vh;
     width: 100vw;
+    top: 0;
     left: 0;
     border-radius: 1rem;
     display: flex;
@@ -81,15 +82,16 @@
 }
 
 .fa-angle-down{
+    color: #072AC8;
+    font-size: 30px;
     position: sticky;
     /* margin-top: 30vh; */
-    transition: transform 0.3s ease, font-size 0.3s ease;
+    transition: translate 0.3s ease;
 }
 
 .fa-angle-down:hover{
-    transform: translateY(-10px);
-    font-size: 30px;
-    color: #072AC8;
+    translate: 0px 10px;
+    color: #F9564F;
 }
 .fa-angle-up{
     position: sticky;
@@ -152,12 +154,30 @@
     z-index: -1;
     color:#313638c6;
 }
+.about-section .about-text .my-links{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 35px;
+    margin: 40px;
+}
 
+.about-section .about-text .my-links .fa-github, .about-section .about-text .my-links .fa-linkedin{
+    transition: color 0.3s ease, translate 0.3s ease;
+}
+.about-section .about-text .my-links .fa-github:hover, .about-section .about-text .my-links .fa-linkedin:hover{
+    color:#072AC8;
+    translate: 0px -5px;
+}
+.about-section .about-text .my-details {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    font-size: 20px;
+}
 .portfolio-section{
     padding-top: 10vh;
     text-align: center;
-    height: 80vh;
-
 }
 .portfolio-section .portfolio{
     display: flex;
@@ -176,6 +196,14 @@
     align-items: center;
 }
 
+
+
+footer{
+    padding: 20px;
+    height: 15vh;
+    background-color: #E0DFD5;
+    text-align: center;
+}
 @media screen and (max-width: 767px){
     .header-item{
         display: none;
