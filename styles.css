@@ -18,6 +18,14 @@
     font-weight: bold;
     font-size: normal;
 }
+.burger{
+    height: 28px;
+    width: 42px;
+    display: none;
+}
+.burger:hover{
+    cursor: pointer;
+}
 .heading{
     text-decoration: none;
     background-color: transparent;
@@ -160,6 +168,8 @@
     height: 80vh;
 }
 .about-section .about-image img{
+    width:300px; 
+    height:470px;
     object-fit: cover;
 }
 
@@ -211,8 +221,6 @@
     align-items: center;
 }
 
-
-
 footer{
     padding: 20px;
     height: 15vh;
@@ -237,5 +245,53 @@ footer{
     .header-menu{
         height: 15vh;
         align-content: center;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .header-menu .header-list{
+        display: none;
+    }
+    .burger{
+        margin-left: 2em;
+        display: block;
+        z-index: 3;
+        background-color: transparent;
+    }
+    .layer1, .layer2, .layer3{
+        background-color: #313638;
+        height: 4px;
+        width: 100%;
+        border-radius: 2px;
+        margin-top: 4px;
+        z-index: 3;
+    }
+    .header-menu{
+        position: fixed;
+        width: 100%;
+        
+    }
+
+    .inner-about .about-image img{
+        margin-top: 200px;
+        height: 300px;
+        width: 170px;
+    }
+    .inner-about .about-text h1{
+        font-size: 50px;
+    }
+
+    .inner-about .about-text .my-links{
+        gap: 5px;
+        margin: 10px;
+    }
+    .inner-about .about-text .my-details{
+      font-size: 12px; 
+      background-color: transparent;
+    }
+
+    .inner-about .about-text .my-details .fa-phone{
+        background-color: transparent;
     }
 }
