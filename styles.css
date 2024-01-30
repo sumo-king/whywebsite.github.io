@@ -249,12 +249,22 @@ footer{
 }
 
 @media screen and (max-width: 480px){
-
+    .logo{
+        left: 10px;
+        padding: 0;
+        
+    }
+    .header-menu{
+        gap: 0px;
+    }
+    .header-menu .logo .heading{
+        font-size: 25px;
+    }
     .header-menu .header-list{
         display: none;
     }
     .burger{
-        margin-left: 2em;
+        margin-left: 1em;
         display: block;
         z-index: 3;
         background-color: transparent;
@@ -272,14 +282,24 @@ footer{
         width: 100%;
         
     }
+    
+    .intro-section h2{
+        font-size: 20px;
+    }
 
+    .intro-section h1{
+        font-size: 30px;
+    }
     .inner-about .about-image img{
         margin-top: 200px;
         height: 300px;
-        width: 170px;
+        width: 150px;
+    }
+
+    .inner-about .about-text{
     }
     .inner-about .about-text h1{
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .inner-about .about-text .my-links{
