@@ -209,6 +209,21 @@
     padding: 20px;
 }
 
+.portfolio-section h3{
+    background-color: transparent; 
+    font-size: 30px;
+}
+.portfolio-section h1{
+    background-color: transparent; 
+    font-family: 'Ubuntu-Bold'; 
+    font-size: 40px;
+}
+.portfolio-section .portfolio-image img{
+    object-fit: cover; 
+    border-radius: 1rem;
+    width:430px;
+    height:350px; 
+}
 .portfolio-section .portfolio-image, .portfolio-section .portfolio-details{
     margin: 5px;
     height: 80vh;
@@ -256,6 +271,9 @@ footer{
     }
     .header-menu{
         gap: 0px;
+        height: 9vh;
+        position: fixed;
+        width: 100%;
     }
     .header-menu .logo .heading{
         font-size: 25px;
@@ -277,11 +295,6 @@ footer{
         margin-top: 4px;
         z-index: 3;
     }
-    .header-menu{
-        position: fixed;
-        width: 100%;
-        
-    }
     
     .intro-section h2{
         font-size: 20px;
@@ -291,12 +304,15 @@ footer{
         font-size: 30px;
     }
     .inner-about .about-image img{
-        margin-top: 200px;
+        margin-top: 100px;
         height: 300px;
         width: 150px;
     }
-
+    .about-section .about-image, .about-section .about-text{
+        height: 70vh;
+    }
     .inner-about .about-text{
+        padding-top: 40px;
     }
     .inner-about .about-text h1{
         font-size: 40px;
@@ -311,7 +327,41 @@ footer{
       background-color: transparent;
     }
 
+    .about-section .fa-angle-up{
+        display: none;
+    }
+    
     .inner-about .about-text .my-details .fa-phone{
         background-color: transparent;
     }
+
+    .portfolio-section h3{
+        font-size: 20px;
+    }
+    .portfolio-section h1{
+        font-size: 30px;
+    }
+
+    .portfolio-section .portfolio-image img{
+        width: 340px;
+        height: 210px;
+    }
+
+    .portfolio-section .my-portfolios .portfolio{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0;
+        box-shadow: #313638 1px 1px;
+        height: 50vh;
+        border-radius: 1rem;
+    }
+
+    .portfolio-section .portfolio .portfolio-details{
+        font-size: 10px;
+        width: 100%;
+    }
+
+
 }

@@ -7,7 +7,7 @@ $(document).ready(function() {
 
             project += `<div class="portfolio" id="portfolio">`+
                 `<div class="portfolio-image">` +
-                    `<img width=430px height=350px style="object-fit: cover; border-radius:1rem;" src=${value.image}>`+
+                    `<img  src=${value.image}>`+
                 `</div>`+
                 `<div class="portfolio-details">`+
                     `<h3>${value.name}</h3>`+
@@ -15,7 +15,8 @@ $(document).ready(function() {
                     `<p>${value.description}</p>`+
                     `<a href="${value.url}">View Project</a>`+
                 `</div>`+
-            `</div>`;
+            `</div>`+
+            ` <a href="#about-me"><i class="fa-solid fa-angle-up porfolio-up"></i></a>`
             $(`.my-portfolios`).html(project);
         });
         
