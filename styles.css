@@ -80,6 +80,22 @@
     height: 100px;
     background-color: transparent;
 }
+.menu-sidebar{
+    display: none;
+}
+
+.overlay{
+    height: 100vh;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    background-color: rgb(15, 15, 15);
+    opacity: 0.3;
+    transition: all 0.3s linear;
+    scroll-behavior: smooth;
+}
 
 .intro-section{
     height: 100vh;
@@ -261,13 +277,20 @@ footer{
         height: 15vh;
         align-content: center;
     }
+
+    .menu-sidebar{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;   
+    }
 }
 
 @media screen and (max-width: 480px){
     .logo{
         left: 10px;
         padding: 0;
-        
     }
     .header-menu{
         gap: 0px;
@@ -295,6 +318,27 @@ footer{
         margin-top: 4px;
         z-index: 3;
     }
+    .menu-sidebar{
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        transform: translate(-100%);  
+        z-index: 5;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .menu-sidebar .side-menu-list{
+        padding: 40px;
+        list-style: none;
+    }
+    .menu-sidebar .side-menu-list a{
+        text-decoration: none;
+    }
+
     
     .intro-section h2{
         font-size: 20px;

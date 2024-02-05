@@ -1,6 +1,9 @@
+const burger = document.querySelector('.burger');
+const sideMenu = document.querySelector('.menu-sidebar');
+const closeMenu = document.querySelector('.close-menu');
 
 $(document).ready(function() {
-
+    
     let project = '';
     $.getJSON('projects.json', function (data) {
         $.each(data, function(key, value) {
@@ -23,3 +26,15 @@ $(document).ready(function() {
     });
 });
 
+burger.addEventListener('click', function (){
+    sideMenu.style.transform = 'translate(0%)';
+    const bodyOverLay = document.createElement("div");
+    bodyOverLay.classList.add(".overlay");
+    setTimeout(function(){
+        document.querySelector("body").append(bodyOverLay); 
+    },300)
+})
+
+closeMenu.addEventListener('click', function (){
+    sideMenu.style.transform = 'translate(-100%)';
+})
